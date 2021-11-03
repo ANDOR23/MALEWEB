@@ -1,0 +1,179 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.menu .btn-abrir-popup{
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: blueviolet;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.menu .btn-abrir-popup:hover{
+    color: blueviolet;
+    background: white;
+}
+.contenedor .video h1{
+    font-size: 40px;
+    color: violet;
+    border: black;
+    justify-content: space-between;
+    padding-bottom: 20px;
+} 
+
+.video{
+    background-color: rgba(95, 72, 63, 0.3);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popup{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(128, 93, 255,1);
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+}
+
+.popup .btn-cerrar-popup{
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+    line-height: 16px;
+}
+
+.popup .btn-cerrar-popup:hover{
+    color:maroon;
+}
+
+.popup h3{
+    font-size: 36px;
+    color: blueviolet;
+    font-weight: 700;
+}
+
+.popup h4{
+    font-size: 26px;
+    color: rgb(45, 17, 71);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.popup form .contenedor-inputs{
+
+}
+.notice.inactive{
+    visibility: hidden;
+}
+
+.popup form .contenedor-inputs input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(132, 0, 255);
+}
+
+.popup form .btn-submit{
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: blueviolet;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.popup form .btn-submit:hover{
+    color: blueviolet;
+    background: white;
+}
+
+.popup .notice{
+    margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer .logofoot img{
+    width: 70%;
+}
+footer .redes a{
+    font-size: 40px;
+    display: inline-block;
+    color: blueviolet;
+    border: 3px solid violet;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.redes a:hover{
+    color: whitesmoke;
+    background:rgba(128, 93, 255,1);
+}
+
