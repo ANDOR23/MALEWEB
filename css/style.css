@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .navbar{
@@ -106,9 +106,6 @@ body{
     margin-bottom: 20px;
 }
 
-.popup form .contenedor-inputs{
-
-}
 .notice.inactive{
     visibility: hidden;
 }
@@ -177,3 +174,28 @@ footer .redes a{
     background:rgba(128, 93, 255,1);
 }
 
+/* NEW STYLES */
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#titulo {
+    color: white;
+    font-size: 65px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#titulo-footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+    margin-right: 50px;
+}
+
+#contenedor-video {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}

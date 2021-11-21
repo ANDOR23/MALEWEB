@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a18ebeaf3f.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <title>M/A/L/E</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a18ebeaf3f.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <title>M/A/L/E</title>
-</head>
-
-<body background="img/background.jpg">
-
-    <header>
-        <nav>
-            <div class="navbar" style="background-image: url(img/back.jpg);">
-                <div class="logo">
-                    <img src="img/logo.png" alt="">
+    <body background="img/fondo-morado2.jpg">
+        <header>
+            <nav>
+                <div class="navbar" style="background-image: url(img/abstract-purple2.jpg);">
+                    <div class="logo">
+                        <h1 id="titulo">M / A / L / E</h1><!-- <img src="img/logo.png" alt=""> -->
+                    </div>
+                    <div class="menu">
+                        <button class="btn-abrir-popup" id="btn-abrir-popup">📨 MALE's Mail</button>
+                    </div>
                 </div>
-                <div class="menu">
-                    <button class="btn-abrir-popup" id="btn-abrir-popup">📨 MALE's Mail</button>
-                </div>
+            </nav>
+        </header>
+
+        <div id="contenedor-video">
+            <div class="contenedor">
+                <section class="video">
+        
+                    <div class="video-content" id="videito">
+                        
+                    </div>
+                </section>
             </div>
+        </div>
 
-
-        </nav>
-    </header>
-    <div class="contenedor">
-        <section class="video">
-            <h1>WE ARE MALE</h1>
-
-            <div class="video-content" id="videito">
-                
-            </div>
-        </section>
-
-    </div>
-
-    <div class="overlay" id="overlay">
-        <div class="popup" id="popup">
-            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-            <h3>MALE's Mail</h3>
-            <h4>Suscribete!!</h4>
-            <form action="" id="formulario">
-                <div class="contenedor-inputs">
-                    <input type="email" placeholder="Correo" name="email" id="email">
-                </div>
-                <div id="notice" class="notice">
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>MALE's Mail</h3>
+                <h4>Suscribete!!</h4>
+                <form action="" id="formulario">
+                    <div class="contenedor-inputs">
+                        <input type="email" placeholder="Correo" name="email" id="email">
+                    </div>
+                    <div id="notice" class="notice">
+                        
+                    </div>
+                        <button class="btn-submit" id="subBtn" type="submit" onclick="prevernt(event);">Suscribirse</button>
                     
-                </div>
-                    <button class="btn-submit" id="subBtn" type="submit" onclick="prevernt(event);">Suscribirse</button>
-                
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-    <footer>
-        <div class="logofoot">
-            <img src="img/footer.png" alt="">
-        </div>
-        <div class="redes">
-            <a href="https://www.instagram.com/we.are.male/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-spotify"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
+        <footer>
+            <div class="logofoot">
+                <!-- <img src="img/footer.png" alt=""> -->
+                <h2 id="titulo-footer">M / A / L / E</h2>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/we.are.male/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
 
-        </div>
-    </footer>
-    <script src="js/index.js"></script>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
 
-</body>
-
+    </body>
 </html>
