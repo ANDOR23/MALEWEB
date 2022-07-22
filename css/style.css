@@ -177,3 +177,39 @@ footer .redes a{
     background:rgba(128, 93, 255,1);
 }
 
+/* css de la página de verificación */
+
+#verify-body {
+    display: flex;
+    flex-direction: column;
+    
+    width: fit-content;
+    height: max-content;
+    padding: 10px;
+    /* background-image: url(img/background.jpg);  */
+    height: 200px;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(128, 0, 128, 0.308), rgba(204, 0, 255, 0.308) , rgba(255, 255, 255, 0.308));
+}
+
+#verify-body > h1{
+    color: white;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    
+    text-align: center;
+    padding: 30px;
+}
+
+#verify-body > p{
+    color: white;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+#cabeza {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}

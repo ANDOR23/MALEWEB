@@ -21,7 +21,7 @@ btnCerrarPopup.addEventListener('click', function () {
 //id canal: UC5qZFWiXlkh59BYAZ4LwBSg
 
 var key = "AIzaSyB9RarQdF8cgFHqhX5J1AViu79TsXa0yR4";
-var idCanal = "UC5qZFWiXlkh59BYAZ4LwBSg";
+var idCanal = "UClgMAQfu5NafZAPdA4SIKGQ";
 var url = "https://www.googleapis.com/youtube/v3/search?key=" + key + "&channelId=" + idCanal + "&part=snippet,id&order=date&maxResults=1";
 
 $.getJSON(url, function (data) {
