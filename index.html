@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/a18ebeaf3f.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <title>M/A/L/E</title>
-    </head>
 
-    <body background="img/fondo-morado2.jpg">
-        <header>
-            <nav>
-                <div class="navbar" style="background-image: url(img/abstract-purple2.jpg);">
-                    <div class="logo">
-                        <h1 id="titulo">M / A / L / E</h1><!-- <img src="img/logo.png" alt=""> -->
-                    </div>
-                    <div class="menu">
-                        <button class="btn-abrir-popup" id="btn-abrir-popup">📨 MALE's Mail</button>
-                    </div>
-                </div>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a18ebeaf3f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>M/A/L/E</title>
+</head>
 
-        <div id="contenedor-video">
-            <div class="contenedor">
-                <section class="video">
-        
-                    <div class="video-content" id="videito">
-                        
-                    </div>
-                </section>
-            </div>
+<body style="background-color:#e3f2fd">
+
+    <nav id="nav-bar" class="navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/malelogo.png" alt="" width="110" height="100">
+            </a>
         </div>
+    </nav>
 
-        <div class="overlay" id="overlay">
-            <div class="popup" id="popup">
-                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-                <h3>MALE's Mail</h3>
-                <h4>Suscribete!!</h4>
+    <div id="contenedor-video" class="contenedor">
+        <section class="video">
+            <div class="video-content" id="videito">
+            </div>
+        </section>
+    </div>
+
+    <div id="newsletter-form">
+        <div class="card w-50">
+            <div id="card-body" class="card-body">
+                <h5 id="titulo-form">Únete al MALEMAIL</h5>
                 <form action="" id="formulario">
-                    <div class="contenedor-inputs">
+                    <div id="input-email" class="contenedor-inputs">
                         <input type="email" placeholder="Correo" name="email" id="email">
                     </div>
                     <div id="notice" class="notice">
                     </div>
-                        <button class="btn-submit" id="subBtn" type="submit" onclick="prevernt(event);">Suscribirse</button>
+                    
+                    <button class="btn-submit" id="subBtn" type="submit" onclick="prevernt(event);">Suscribirse</button>
                 </form>
+                <!-- <button id="btn-abrir-popup">MALEMAIL</button> -->
             </div>
         </div>
+    </div>
 
 
-        
-        <footer>
-            <div class="logofoot">
-                <!-- <img src="img/footer.png" alt=""> -->
-                <h2 id="titulo-footer">M / A / L / E</h2>
-            </div>
-            <div class="redes">
-                <a href="https://www.instagram.com/we.are.male/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-spotify"></i></a>
-                <a href=""><i class="fab fa-youtube"></i></a>
-            </div>
-        </footer>
-        <script src="js/index.js"></script>
-    </body>
+    <footer>
+        <div>
+            <h2 id="titulo-footer">M / A / L / E</h2>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/we.are.male/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/7IVJwGFdnGy6GJEXKatMG6?si=XgbO9vOcRH6EStcwy4XVAA"><i
+                    class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/we.are.male/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
