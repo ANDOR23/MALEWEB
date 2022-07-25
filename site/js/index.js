@@ -52,7 +52,7 @@ async function prevernt(evt) {
     succMSG = '<p id="success">Se ha enviado un link de verificación a tu correo</p>'
     let valor = document.getElementById("email").value;
     evt.preventDefault();
-     console.log(valor) 
+    /* console.log(valor) */
     /***************POST ***********************/
     const newPost = {
         email: valor
@@ -87,13 +87,13 @@ async function prevernt(evt) {
     } else {
         alert("Error-HTTP: " + responsee.status);
     }
-    let verifyURL = "http://127.0.0.1:5501/verify.html?email=" + correomail + "&hash=" + elhash;
+    let verifyURL = "http://127.0.0.1:5500/verify.html?email=" + correomail + "&hash=" + elhash;
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "no.reply.male@hotmail.com",
-        Password: "7A70B6836487E55C1ECCBDB685CB137C5416",
+        Username: "pirlo19994@gmail.com",
+        Password: "7704B5A2637929517E373B7CC3E0CE17FC8F",
         To: correomail,
-        From: "no.reply.male@hotmail.com",
+        From: "pirlo19994@gmail.com",
         Subject: "Llego el MALE's Mail!",
         Body: verifyURL,
 
