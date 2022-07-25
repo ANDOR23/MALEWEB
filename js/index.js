@@ -90,10 +90,10 @@ async function prevernt(evt) {
     let verifyURL = "http://127.0.0.1:5500/verify.html?email=" + correomail + "&hash=" + elhash;
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "pirlo19994@gmail.com",
-        Password: "7704B5A2637929517E373B7CC3E0CE17FC8F",
+        Username: "noreply.maleband@gmail.com",
+        Password: "B93B6846FC9A4C108EAFF73BA40C8A0F00CA",
         To: correomail,
-        From: "pirlo19994@gmail.com",
+        From: "noreply.maleband@gmail.com",
         Subject: "Llego el MALE's Mail!",
         Body: verifyURL,
 
