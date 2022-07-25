@@ -44,10 +44,11 @@ $.getJSON(url, function (data) {
 
 let subBtn = document.getElementById("subBtn");
 
-const URL = 'http://127.0.0.1:5000/postUser';
-const urlget = 'http://127.0.0.1:5000/getUser';
 
 async function prevernt(evt) {
+    const URL = 'http://127.0.0.1:5000/postUser';
+const urlget = 'http://127.0.0.1:5000/getUser';
+
     errorMSG = '<p>Error al registrar el correo. intente de nuevo</p>'
     succMSG = '<p id="success">Se ha enviado un link de verificación a tu correo</p>'
     let valor = document.getElementById("email").value;
@@ -87,13 +88,13 @@ async function prevernt(evt) {
     } else {
         alert("Error-HTTP: " + responsee.status);
     }
-    let verifyURL = "http://127.0.0.1:5500/verify.html?email=" + correomail + "&hash=" + elhash;
+    let verifyURL = "http://127.0.0.1:5501/verify.html?email=" + correomail + "&hash=" + elhash;
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "noreply.maleband@gmail.com",
-        Password: "B93B6846FC9A4C108EAFF73BA40C8A0F00CA",
+        Username: "maleband@musician.org",
+        Password: "17958ABEBE7FCB40E00F6DA76DAA8DA693A8",
         To: correomail,
-        From: "noreply.maleband@gmail.com",
+        From: "maleband@musician.org",
         Subject: "Llego el MALE's Mail!",
         Body: verifyURL,
 
